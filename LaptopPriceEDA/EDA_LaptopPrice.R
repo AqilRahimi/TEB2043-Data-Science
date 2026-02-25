@@ -3,7 +3,7 @@ install.packages("tidyverse")
 library(tidyverse)
 
 # 1. Load the dataset
-df <- read.csv("laptop_price1.csv")
+df <- read.csv("C:/Users/aqilr/Downloads/LaptopPriceEDA/laptop_price1.csv")
 
 # 2. Basic Inspection
 str(df)
@@ -53,4 +53,5 @@ ggplot(df, aes(x = Ram, y = Price_euros)) +
 # 6. Correlation Analysis
 # Correlation between numeric variables
 cor_matrix <- cor(df %>% select(Inches, Ram, Weight, Price_euros))
+
 print(cor_matrix)
